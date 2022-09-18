@@ -1,0 +1,54 @@
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $color-white;
+  text-align: center;
+  color: $color-secondary;
+  margin-bottom: 30px;
+  &__header {
+    position: relative;
+  }
+  &__img {
+    border-radius: 20px;
+  }
+  &__like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 7px;
+    cursor: pointer;
+    background: $color-white;
+    border-radius: 15px;
+  }
+  &__price {
+    padding: 15px 30px;
+    background: $color-white;
+    text-align: center;
+    color: $color-primary;
+    display: inline-block;
+    transform: translateY(-25px);
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &__title {
+    font-size: 18px;
+  }
+  &__text {
+    font-size: 16px;
+    margin: 12px 0px 25px;
+  }
+  &__link {
+    display: inline-block;
+    font-weight: 500;
+    padding: 10px 30px;
+    background-color: lighten($color-grey, 35%);
+    color: $color-grey;
+    border-radius: 20px;
+    @include transition;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+}

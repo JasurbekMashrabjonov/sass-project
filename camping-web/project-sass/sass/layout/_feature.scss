@@ -1,0 +1,22 @@
+.feature {
+  padding: 0px 100px;
+
+  &__card {
+    cursor: default;
+    background: #fff;
+    color: $color-secondary;
+    text-align: center;
+    border-radius: 20px;
+    padding: 60px 20px;
+    transition: transform 0.4s ease;
+    &:hover {
+      transform: translateY(-15px) scale(1.02);
+    }
+  }
+  &__title {
+    margin: 23px 0px 12px 0px;
+  }
+  &__text {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,43 @@
+.nav {
+  color: darken($color-white, 20%);
+
+  .container {
+    @include center;
+    @include responsive(lg-desktop) {
+      @include flex(space-between);
+      padding: 0px 40px;
+    }
+  }
+  &__logo {
+    display: inline-block;
+    background-color: $color-primary;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    @include flex(center);
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  &__list {
+    @include flex;
+    @include responsive(lg-desktop) {
+      display: none;
+    }
+  }
+  &__item {
+    margin-right: 10px;
+  }
+  &__link {
+    padding: 5px;
+    @include transition(color);
+    &:hover {
+      color: $color-white;
+    }
+  }
+  &__right {
+    margin-left: auto;
+    @include responsive(lg-desktop) {
+      display: none;
+    }
+  }
+}
